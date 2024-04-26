@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  #body::-webkit-scrollbar{
+    width:0.7rem;
+  }
+
+  #body::-webkit-scrollbar-thumb{
+    background: #9f3647;
+  }
+  
+  #body::-webkit-scrollbar-track{
+    background: #141414;
+  }
+
+  #body{
+    background-image: linear-gradient(
+        to right top,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),url(/images/registro.jpg);
+      background-size: cover;
+      background-position: center;
+  }
+
+  #body .barraRegistro{
+    padding:1.8rem 2rem 0.5rem;
+  }
+
+  #body .barraRegistro .logo{
+    color: #fff;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  #main .formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    background-color: rgb(42,42,42);
+    margin: 0 auto 2rem;
+    width: 30vw;
+    /*padding: 0.5rem 4rem;*/
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+}
+
+  #main .formulario .registro h2{
+    color: #fff;
+    font-size: 2.5rem;
+    align-self: flex-start;
+    padding-bottom: 0.5rem;
+    width: fit-content;
+  }
+
+  #main .formulario div{
+    padding:0.7rem 0;
+    margin:0 auto;
+    width: 22vw;
+  }
+
+  #main .formulario div .campo{
+    color: #fff;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    width: 22vw;
+    padding: 0 1.2rem;
+    background-color: rgb(50,50,50);
+    border:0.15rem solid #9f3647;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+    outline: none;
+}
+
+#main .formulario .terminos{
+    display: flex;
+    justify-content: flex-start;
+    width: 22vw;
+}
+
+#main .formulario .terminos .textoTerminos{
+    color: #fff;
+    font-size: 0.8rem;
+    padding-left: 0.8rem;
+    text-align: center;
+}
+
+#main .formulario .botonRegistrarse{
+    color: #fff;
+    font-size: 1rem;
+    background-color: #9f3647;
+    border: none;
+    width: 22vw;
+    height: 3.6rem;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+}
+
+#main .formulario .ayuda a{
+    color: #787878;
+}
+
+#main .sesion{
+    padding-top: 8rem;
+    padding-bottom: 8.5rem;
+}
+
+/*Medias Queries*/
+@media screen and (max-width:1200px){
+  #main .formulario {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #main .formulario div{
+    padding:0.7rem 0;
+    margin:0 auto;
+    width: 70vw;
+  }
+
+  #main .formulario .registro h2{
+    align-self: center;
+    margin:0 auto;
+  }
+
+  #main .formulario div .campo{
+    width: 70vw;
+    height: 2.2rem;
+    font-size: 1rem;
+}
+
+#main .formulario .terminos{
+  width: 70vw;
+}
+
+#main .formulario .terminos .textoTerminos{
+  font-size: 0.7rem;
+}
+
+#main .formulario .botonRegistrarse{
+  font-size: 0.8rem;
+  width: 66vw;
+  height: 3rem;
+  margin: 0 2vw;
+}
+
+#main .formulario .ayuda{
+  width: 20vw;
+}
+
+#main .formulario .ayuda a{
+  font-size: 0.8rem;
+}
+
+
+}

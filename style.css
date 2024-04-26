@@ -1,0 +1,825 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+}
+
+ul,ol li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+body {
+  background-color: #181419;
+}
+
+body::-webkit-scrollbar{
+  width:0.7rem;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: #9f3647;
+}
+
+body::-webkit-scrollbar-track{
+  background: #141414;
+}
+
+/*Barra de Navegacion*/
+.header {
+  background-color: #9f3647;
+  color: #ffffff;
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header .barraNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12vh;
+  margin: 0 3rem;
+}
+
+.header .barraNav .logo {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.header .barraNav .menu {
+  display: flex;
+  gap: 1.1rem;
+}
+
+.header .barraNav .menu .linknav {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: #9f3647;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  z-index: -1000;
+}
+
+.header .barraNav .menu .iniciarSesion {
+  background-color: #181419;
+}
+
+.header .barraNav .menu .linknav:hover {
+  background-color: #9f3647;
+  box-shadow: 0rem 0rem 1rem 0rem #6b0f1e;
+  transition: transform 0.3s, box-shadow 0.3s;
+  -webkit-transition: transform 0.3s, box-shadow 0.3s;
+  -moz-transition: transform 0.3s, box-shadow 0.3s;
+  -ms-transition: transform 0.3s, box-shadow 0.3s;
+  -o-transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.header .barraNav .logo:hover {
+  animation-name: swing;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+/*-----------------------------------------*/
+
+/*Seccion 1*/
+.main .seccion1 {
+  text-align: center;
+  background-image: linear-gradient(
+      to right top,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(/images/imagen_seccion_principal.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.main .seccion1 .titulo {
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.main .seccion1 .subtitulo1 {
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.main .seccion1 .botonRegistrate {
+  background-color: #9f3647;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  transition: all 0.5s ease;
+  height: 9vh;
+  text-align: center;
+  align-content: center;
+}
+
+.main .seccion1 .botonRegistrate:hover {
+  box-shadow: 0rem 0rem 0.6rem 0rem gray;
+  font-size: 1.1rem;
+  padding: 0.9rem 1.8rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+/*----------------------------------------*/
+
+/*Seccion 2*/
+.main .seccion2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  color: #ffffff;
+}
+
+
+.main .seccion2 .subtitulo2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.main .seccion2 .buscadorPeliculas {
+  margin: 1rem 0 0;
+}
+
+.main .seccion2 .buscadorPeliculas .buscador {
+  font-size: 1.2rem;
+  width: 35vw;
+  height: 8vh;
+  margin: 1.25rem 0;
+  padding: 0 1.25rem;
+  border: 0.125rem solid #ffffff;
+  outline: none;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+}
+
+.main .seccion2 .buscadorPeliculas .botonBuscador {
+  display: inline-block;
+  background-color: #9f3647;
+  color: #ffffff;
+  margin: 1.25rem 0.625rem;
+  padding: 0 1.25rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: 0.125rem solid #ffffff;
+  height: 8vh;
+  border-radius: 5rem;
+  text-align: center;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.main .seccion2 .buscadorPeliculas .botonBuscador:hover{
+  box-shadow: 0rem 0rem 0.5rem 0rem gray;
+  font-size: 1.2rem;
+  scale: 93%;
+  margin: 1.25rem 0.625rem;
+  padding:0 1.25rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  cursor:initial;
+}
+
+hr{
+  border:0.1rem solid #9f3647;
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+/*Seccion 3*/
+.main .seccion3{
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+}
+
+.main .seccion3 .subtitulo3{
+  padding: 0.5rem 0 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.main .seccion3 .grid-container-peliculas{
+  margin: auto;
+  display: grid;
+  grid-template-columns: 18vw 18vw 18vw 18vw;
+}
+
+.main .seccion3 .grid-container-peliculas .peliculas{
+  text-align: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+.main .seccion3 .grid-container-peliculas .peliculas a img{
+  width: 100%;
+  /*height: 100%;*/
+  border-radius: 0.7rem;
+  -webkit-border-radius: 0.7rem;
+  -moz-border-radius: 0.7rem;
+  -ms-border-radius: 0.7rem;
+  -o-border-radius: 0.7rem;
+}
+
+.main .seccion3 .btn{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.main .seccion3 .btn .boton{
+  box-sizing: content-box;
+  background-color: #9f3647;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding:1rem 1.25rem;
+  margin: 0.75rem;
+  border: 0.1rem solid #ffffff;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.main .seccion3 .grid-container-peliculas .peliculas a img:hover{
+  scale:0.9;
+  filter: blur(0.3rem);
+  box-shadow: 0rem 0rem 2rem 0rem #9f3647;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-filter: blur(0.3rem);
+}
+
+.main .seccion3 .grid-container-peliculas .peliculas a p{
+  visibility: hidden;
+}
+
+.main .seccion3 .grid-container-peliculas .peliculas a:hover p{
+  visibility: visible;
+  position: relative;
+  top: -11rem;
+  left: 0;
+  color:#ffffff;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.main .seccion3 .btn .boton:hover{
+  box-shadow: 0rem 0rem 0.6rem 0rem gray;
+  scale: 0.90;
+  transition: all 0.5s ease;
+}
+
+/*.......................................................*/
+
+/*Sección 4*/
+.main .seccion4{
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+}
+
+.main .seccion4 .subtitulo4{
+  padding: 0.5rem 0 2.5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.main .seccion4 .aclamadas{
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+  padding:0 2rem 2rem;
+  margin-bottom: 4rem;
+  justify-content: space-around;
+  gap: 2.25rem;
+}
+
+.main .seccion4 .aclamadas::-webkit-scrollbar{
+  width: 1.5rem;
+}
+
+.main .seccion4 .aclamadas::-webkit-scrollbar-thumb{
+  background:#9f3647;
+}
+
+.main .seccion4 .aclamadas::-webkit-scrollbar-track{
+  background: #141414;
+}
+
+.main .seccion4 .aclamadas .peli-aclamadas img{
+  flex-wrap: wrap;
+  cursor: pointer;
+  width: 12vw;
+  border-radius: 0.75rem;
+  -webkit-border-radius: 0.75rem;
+  -moz-border-radius: 0.75rem;
+  -ms-border-radius: 0.75rem;
+  -o-border-radius: 0.75rem;
+}
+
+/*...........................................................*/
+
+/*Pie de pagina*/
+.footer .menu-pie{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.7rem 0;
+  background-color: #9f3647;
+}
+
+.footer .menu-pie a{
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.footer .menu-pie .administrador{
+  background-color: #181419;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+}
+
+.footer .flecha-arriba{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/*.............................................*/
+
+/*Medias queries*/
+
+@media screen and (max-width:1224px){
+  .main .seccion2 .buscadorPeliculas .buscador {
+    width: 55vw;
+    height: 7.5vh;
+  }
+  
+  .main .seccion2 .buscadorPeliculas .botonBuscador {
+    height: 7.5vh;
+  }
+
+  .main .seccion3 .subtitulo3{
+    padding: 0.5rem 0 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  .main .seccion3 .grid-container-peliculas{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 28vw 28vw 28vw;
+    justify-content: center;
+}
+
+.main .seccion3 .btn{
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.main .seccion3 .btn .boton{
+  padding:0.9rem 1.10rem;
+}
+
+.main .seccion4 .aclamadas .peli-aclamadas img{
+  width: 17.5vw;
+}
+
+.footer .menu-pie{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.7rem 4.5rem;
+  background-color: #9f3647;
+}
+
+}
+
+@media screen and (max-width:899px){
+  .main .seccion2 .buscadorPeliculas .buscador {
+    width: 65vw;
+    height: 7.5vh;
+  }
+
+  .main .seccion2 .buscadorPeliculas .botonBuscador {
+    height: 7.5vh;
+  }
+
+  .main .seccion3 .subtitulo3{
+    padding: 0.6rem 0 1rem;
+  }
+
+  .main .seccion3 .grid-container-peliculas{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 33vw 33vw;
+    column-gap: 0.8rem;
+  }
+
+  .main .seccion3 .btn{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .main .seccion4 .aclamadas .peli-aclamadas img{
+    width: 20.8vw;
+  }
+
+  .footer .menu-pie{
+    padding: 1.6rem 0;
+    padding-left: 0.9rem;
+    gap:1.2rem
+  }
+
+  .footer .menu-pie a{
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .footer .menu-pie .administrador{
+    padding: 0.4rem 1rem;
+  }
+
+}
+
+@media screen and (max-width:768px){
+  .header {
+    background-color: #9f3647;
+    color: #ffffff;
+    height: 18vh;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .header .barraNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    padding: 4rem;
+    margin: 0 auto;
+  }
+
+  .header .barraNav .menu .linknav {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #9f3647;
+    padding: 0.2rem 0.2rem;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+    z-index: -1000;
+  }
+
+  .header .barraNav .menu .iniciarSesion {
+    background-color: #181419;
+  }
+
+  .main .seccion1 {
+    height: 60vh;
+  }
+
+  .main .seccion1 .titulo {
+    font-size: 2.5rem;
+  }
+  
+  .main .seccion1 .subtitulo1 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1rem 0;
+  }
+  
+  .main .seccion1 .botonRegistrate {
+    padding: 0rem 1.5rem;
+    font-size: 1.0rem;
+    height: 7.2vh;
+  }
+
+  .main .seccion1 .botonRegistrate:hover {
+    box-shadow: 0rem 0rem 0.6rem 0rem gray;
+    scale: 95%;
+    font-size: 1.0rem;
+    padding: 0rem 1.5rem;
+  }
+
+
+  .main .seccion2 .subtitulo2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: -6rem;
+  }
+  .main .seccion2 .buscadorPeliculas {
+    margin: 1rem 0 0;
+  }
+  
+  .main .seccion2 .buscadorPeliculas .buscador {
+    font-size: 1rem;
+    width: 45vw;
+    height: 6.5vh;
+    margin: 1.25rem 0;
+    padding: 0 1.25rem;
+    border: 0.125rem solid #ffffff;
+    outline: none;
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+  }
+  
+  .main .seccion2 .buscadorPeliculas .botonBuscador {
+    display: inline-block;
+    background-color: #9f3647;
+    color: #ffffff;
+    margin: 0rem 0.625rem;
+    padding: 0 1.25rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 0.125rem solid #ffffff;
+    height: 6.5vh;
+
+  }
+  
+  .main .seccion2 .buscadorPeliculas .botonBuscador:hover{
+    box-shadow: 0rem 0rem 0.5rem 0rem gray;
+    scale: 93%;
+    font-size: 1rem;
+    margin: 0rem 0.625rem;
+    padding:0 1.25rem;
+  }
+
+  hr{
+    margin-top: -5rem;
+  }
+
+  .main .seccion3 .subtitulo3{
+    padding: 0.5rem 0 0.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .main .seccion3 .grid-container-peliculas{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 53vw;
+  }
+
+  .main .seccion3 .btn{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-bottom: 10rem;
+  }
+
+  .main .seccion3 .btn .boton{
+    box-sizing: content-box;
+    background-color: #9f3647;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding:0.75rem 0.75rem;
+    margin: 0.75rem;
+  }
+
+  .main .seccion4 .subtitulo4{
+    font-size: 2rem;
+  }
+
+  .main .seccion4 .aclamadas .peli-aclamadas img{
+    width: 18.5vw;
+}
+
+.footer .menu-pie{
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1rem 0 0.8rem;
+  
+}
+
+.footer .menu-pie a{
+  font-size: 1rem;
+  font-weight: 700;
+}
+}
+
+/*Pagina Mario Bros*/
+/*Sección Mario1*/
+body main .seccionmario1{
+  background-image: linear-gradient(
+    to right top,
+    rgba(14, 13, 13, 0.5),
+    rgba(14, 13, 13, 0.5)
+  ),url(https://giselemilagros88.github.io/cac_movies_javaphp/assets/img/mario-bg.jpg);
+  background-size:cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 10rem;
+  height: 70vh;
+  gap: 4rem;
+}
+
+body #main .seccionmario1 .contmario1 img{
+  position: relative;
+  top: 3rem;
+  left: 0;
+  width: 22vw;
+  border-radius:1.2rem;
+  -webkit-border-radius:1.2rem;
+  -moz-border-radius:1.2rem;
+  -ms-border-radius:1.2rem;
+  -o-border-radius:1.2rem;
+}
+
+body #main .seccionmario1 .contmario2{
+  position: relative;
+  top:3rem;
+  left:0;
+}
+
+body main .seccionmario1 .infoMario{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color: #ffffff;
+}
+
+body main .seccionmario1 .infoMario .datosPelicula{
+  display: flex;
+  list-style:disc !important;
+  gap: 2rem;
+}
+
+#main .seccionmario1 .contmario2 h2{
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+#main .seccionmario1 .contmario2 h3{
+font-size: 1.6rem;
+font-weight: 700;
+}
+
+#main .seccionmario1 .contmario2 .autores h4{
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+
+h2,h3,h4,h5, p{
+  color: #ffffff;
+}
+
+body main .seccionmario1 .autores{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  gap: 4rem;
+}
+
+
+/*Seccion Mario2*/
+
+body main .seccionmario2{
+  padding: 9rem 10rem 6rem;
+}
+body main .mario2{
+  display: flex;
+  gap: 4.5rem;
+}
+
+body main .seccionmario2 .mario2 .contmario3{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.enlacesMario{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4rem;
+  padding-bottom: 2rem;
+}
+
+.enlacesMario a i{
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+
+.info{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #ffffff;
+  gap: 3rem;
+}
+
+.info .info1 h6{
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.5rem 0;
+  
+}
+
+.info .info2 h6{
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 0.5rem 0;
+}
+

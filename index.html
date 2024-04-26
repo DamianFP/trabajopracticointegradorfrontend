@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabajo Integrador Frontend</title>
+
+    <script
+      src="https://kit.fontawesome.com/3eeacf60be.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <nav class="barraNav">
+          <a class="logo" href="index.html"
+            ><i class="fas fa-film"></i><span> CAC-Movies</span></a
+          >
+          <ul class="menu">
+            <li><a class="linknav" href="#tendencias">Tendencias</a></li>
+            <li><a class="linknav" href="registro.html">Registrarse</a></li>
+            <li>
+              <a class="linknav iniciarSesion" href="iniciarsesion.html"
+                >Iniciar Sesión</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="seccion1">
+        <h1 class="titulo">
+          Películas y series ilimitadas
+          <br />
+          en un solo lugar
+        </h1>
+        <h2 class="subtitulo1">
+          Disfruta donde quieras.
+          <br />
+          Cancela en cualquier momento.
+        </h2>
+        <a href="#" class="botonRegistrate">Registrate</a>
+      </section>
+
+      <section class="seccion2" data-aos="fade-up">
+        <h2 class="subtitulo2">¿Qué estás buscando para ver?</h2>
+        <form class="buscadorPeliculas" action="">
+          <input class="buscador" type="text" placeholder="Buscar..." />
+          <input class="botonBuscador" type="submit" value="Buscar" />
+        </form>
+      </section>
+      <hr />
+
+      <section class="seccion3" id="tendencias" data-aos="fade-up">
+        <h2 class="subtitulo3">Las tendencias de hoy</h2>
+
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="grid-container-peliculas">
+                <div class="peliculas tendencias">
+                  <a href="detalle.html"
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/9rk0NJXs1izgJPZwbkSrkiVFWMQ.jpg"
+                      alt="Dune 2"
+                    />
+                  </a>
+                  <p>Dune 2</p>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href="detalle.html"
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/zS8BSQdbOesql0EWbs17kPvLoAT.jpg"
+                      alt="Kung Fu Panda 4"
+                    />
+                    <p>Kung Fu Panda 4</p></a
+                  >
+                </div>
+                <div class="peliculas tendencias">
+                  <a href="detalle.html"
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/2YqZ6IyFk7menirwziJvfoVvSOh.jpg"
+                      alt="Goodzilla Kong"
+                    />
+                    <p>Goodzilla vs Kong</p></a
+                  >
+                </div>
+                <div class="peliculas tendencias">
+                  <a href="detalle.html"
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/dwh2pqqWobsOmnDFsJkiLRLBQ94.jpg"
+                      alt="Alienoid"
+                    />
+                    <p>Alienoid</p></a
+                  >
+                </div>
+                <div class="peliculas tendencias">
+                  <a href="detalle.html"
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/6Dc9mMl083cVpNknWzALCw7JYPH.jpg"
+                      alt="El problema de los cuerpos"
+                    />
+                    <p>El problema de los cuerpos</p></a
+                  >
+                </div>
+                <div class="peliculas tendencias">
+                  <a href="detalle.html"
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/5P5P2LL4luYbWawQFAhYqxHqOWy.jpg"
+                      alt="Fallout"
+                    />
+                    <p>Fallout</p></a
+                  >
+                </div>
+                <div class="peliculas tendencias">
+                  <a href="detalle.html"
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/6cKzsWfDtGj5BMHi1dN9EkGz4lJ.jpg"
+                      alt="El salario del miedo"
+                    />
+                    <p>El salario del miedo</p></a
+                  >
+                </div>
+                <div class="peliculas tendencias">
+                  <a href="detalle.html"
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/wmnVOIaTsGcRpZ9rLv2msbtqi3C.jpg"
+                      alt="Road House"
+                    />
+                    <p>Road House</p></a
+                  >
+                </div>
+                <div class="peliculas tendencias">
+                  <a href="detalle.html"
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/blq050GHBt0Fzx1j9FvohaEuknJ.jpg"
+                      alt="Madame Web"
+                    />
+                    <p>Madame Web</p></a
+                  >
+                </div>
+                <div class="peliculas tendencias">
+                  <a href="detalle.html"
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/cboUHkM1zA7m3SaCrf6dW5jGqqW.jpg"
+                      alt="Despues del fin del mundo"
+                    />
+                    <p>Después del fin del mundo</p></a
+                  >
+                </div>
+                <div class="peliculas tendencias">
+                  <a href="detalle.html"
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/wtqyNRawswvOfDmDI6n5bCS13pk.jpg"
+                      alt="El corazon del cazador"
+                    />
+                    <p>El coracón del cazador</p></a
+                  >
+                </div>
+                <div class="peliculas tendencias">
+                  <a href="detalle.html"
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/i91SgC0uQa3fb68foFS3zgaMUuD.jpg"
+                      alt="Fabricante de lagrimas"
+                    />
+                    <p>Fabricante de lagrimas</p></a
+                  >
+                </div>
+                <div class="peliculas tendencias">
+                  <a href="detalle.html"
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/5ssaCHmqvTZDVZtcNhNZTzfb7Nj.jpg"
+                      alt="Contacto con la muerte"
+                    />
+                    <p>Contacto con la muerte</p></a
+                  >
+                </div>
+                <div class="peliculas tendencias">
+                  <a href="detalle.html"
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/jPhol6mXdnXYimRAgf3vlN9ZUZF.jpg"
+                      alt="Imaginario"
+                    />
+                    <p>Imaginario</p></a
+                  >
+                </div>
+                <div class="peliculas tendencias">
+                  <a href="detalle.html"
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/n0Fn9P84hvu4achxGIHBxIlBy7A.jpg"
+                      alt="Penoza"
+                    />
+                    <p>Penoza</p></a
+                  >
+                </div>
+                <div class="peliculas tendencias">
+                  <a href="detalle.html"
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/pxkPdKscFFSNoSoROLYIgxcz8of.jpg"
+                      alt="Amenaza mutante"
+                    />
+                    <p>Amenaza mutante</p></a
+                  >
+                </div>
+                <div class="peliculas tendencias">
+                  <a href="detalle.html"
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/6tJWxRfBKWGIPFkfLTod2CgCexU.jpg"
+                      alt="Damsel"
+                    />
+                    <p>Damsel</p></a
+                  >
+                </div>
+                <div class="peliculas tendencias">
+                  <a href="detalle.html"
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/fSY6BYUZMObTIzPfRBlhuAb5lsd.jpg"
+                      alt="Atrapado en lo profundo"
+                    />
+                    <p>Atrapado en lo profundo</p></a
+                  >
+                </div>
+                <div class="peliculas tendencias">
+                  <a href="detalle.html"
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/AnRGjlewyTZj9lfZv3WM9ZTIXRD.jpg"
+                      alt="Amenaza explosiva"
+                    />
+                    <p>Amenaza explosiva</p></a
+                  >
+                </div>
+                <div class="peliculas tendencias">
+                  <a href="detalle.html"
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/ncKCQVXgk4BcQV6XbvesgZ2zLvZ.jpg"
+                      alt="Oppenheimer"
+                    />
+                    <p>Oppenheimer</p></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="grid-container-peliculas">
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/9rk0NJXs1izgJPZwbkSrkiVFWMQ.jpg"
+                      alt="Dune 2"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/zS8BSQdbOesql0EWbs17kPvLoAT.jpg"
+                      alt="Kung Fu Panda 4"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/2YqZ6IyFk7menirwziJvfoVvSOh.jpg"
+                      alt="Goodzilla Kong"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/dwh2pqqWobsOmnDFsJkiLRLBQ94.jpg"
+                      alt="Alienoid"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/6Dc9mMl083cVpNknWzALCw7JYPH.jpg"
+                      alt="El problema de los cuerpos"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/5P5P2LL4luYbWawQFAhYqxHqOWy.jpg"
+                      alt="Fallout"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/6cKzsWfDtGj5BMHi1dN9EkGz4lJ.jpg"
+                      alt="El salario del miedo"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/wmnVOIaTsGcRpZ9rLv2msbtqi3C.jpg"
+                      alt="Road House"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/blq050GHBt0Fzx1j9FvohaEuknJ.jpg"
+                      alt="Madame Web"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/cboUHkM1zA7m3SaCrf6dW5jGqqW.jpg"
+                      alt="Despues del fin del mundo"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/wtqyNRawswvOfDmDI6n5bCS13pk.jpg"
+                      alt="El corazon del cazador"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/i91SgC0uQa3fb68foFS3zgaMUuD.jpg"
+                      alt="Fabricante de lagrimas"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/5ssaCHmqvTZDVZtcNhNZTzfb7Nj.jpg"
+                      alt="Contacto con la muerte"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/jPhol6mXdnXYimRAgf3vlN9ZUZF.jpg"
+                      alt="Imaginario"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/n0Fn9P84hvu4achxGIHBxIlBy7A.jpg"
+                      alt="Penoza"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/pxkPdKscFFSNoSoROLYIgxcz8of.jpg"
+                      alt="Amenaza mutante"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/6tJWxRfBKWGIPFkfLTod2CgCexU.jpg"
+                      alt="Damsel"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/fSY6BYUZMObTIzPfRBlhuAb5lsd.jpg"
+                      alt="Atrapado en lo profundo"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/AnRGjlewyTZj9lfZv3WM9ZTIXRD.jpg"
+                      alt="Amenaza explosiva"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/ncKCQVXgk4BcQV6XbvesgZ2zLvZ.jpg"
+                      alt="Oppenheimer"
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="grid-container-peliculas">
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/9rk0NJXs1izgJPZwbkSrkiVFWMQ.jpg"
+                      alt="Dune 2"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/zS8BSQdbOesql0EWbs17kPvLoAT.jpg"
+                      alt="Kung Fu Panda 4"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/2YqZ6IyFk7menirwziJvfoVvSOh.jpg"
+                      alt="Goodzilla Kong"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/dwh2pqqWobsOmnDFsJkiLRLBQ94.jpg"
+                      alt="Alienoid"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/6Dc9mMl083cVpNknWzALCw7JYPH.jpg"
+                      alt="El problema de los cuerpos"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/5P5P2LL4luYbWawQFAhYqxHqOWy.jpg"
+                      alt="Fallout"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/6cKzsWfDtGj5BMHi1dN9EkGz4lJ.jpg"
+                      alt="El salario del miedo"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/wmnVOIaTsGcRpZ9rLv2msbtqi3C.jpg"
+                      alt="Road House"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/blq050GHBt0Fzx1j9FvohaEuknJ.jpg"
+                      alt="Madame Web"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/cboUHkM1zA7m3SaCrf6dW5jGqqW.jpg"
+                      alt="Despues del fin del mundo"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/wtqyNRawswvOfDmDI6n5bCS13pk.jpg"
+                      alt="El corazon del cazador"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/i91SgC0uQa3fb68foFS3zgaMUuD.jpg"
+                      alt="Fabricante de lagrimas"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/5ssaCHmqvTZDVZtcNhNZTzfb7Nj.jpg"
+                      alt="Contacto con la muerte"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/jPhol6mXdnXYimRAgf3vlN9ZUZF.jpg"
+                      alt="Imaginario"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/n0Fn9P84hvu4achxGIHBxIlBy7A.jpg"
+                      alt="Penoza"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/pxkPdKscFFSNoSoROLYIgxcz8of.jpg"
+                      alt="Amenaza mutante"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/6tJWxRfBKWGIPFkfLTod2CgCexU.jpg"
+                      alt="Damsel"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/fSY6BYUZMObTIzPfRBlhuAb5lsd.jpg"
+                      alt="Atrapado en lo profundo"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/AnRGjlewyTZj9lfZv3WM9ZTIXRD.jpg"
+                      alt="Amenaza explosiva"
+                  /></a>
+                </div>
+                <div class="peliculas tendencias">
+                  <a href=""
+                    ><img
+                      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/ncKCQVXgk4BcQV6XbvesgZ2zLvZ.jpg"
+                      alt="Oppenheimer"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn atras siguiente">
+          <button
+            class="boton anterior"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            Anterior
+          </button>
+          <button
+            class="boton siguiente"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            Siguiente
+          </button>
+        </div>
+
+        <hr />
+      </section>
+      <section class="seccion4">
+        <h2 class="subtitulo4">Las más aclamadas</h2>
+        <div class="aclamadas">
+          <div class="peli-aclamadas">
+            <img
+              src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/5HlLUsmsv60cZVTzVns9ICZD6zU.jpg"
+              alt="El Padrino"
+            />
+          </div>
+          <div class="peli-aclamadas">
+            <img
+              src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/uRRTV7p6l2ivtODWJVVAMRrwTn2.jpg"
+              alt="Cadena perpetua"
+            />
+          </div>
+          <div class="peli-aclamadas">
+            <img
+              src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mbry0W5PRylSUHsYzdiY2FSJwze.jpg"
+              alt="El Padrino II"
+            />
+          </div>
+          <div class="peli-aclamadas">
+            <img
+              src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/xnvHaMFNXzemoH4uXHDMtKnpF7l.jpg"
+              alt="La lista de Schindler"
+            />
+          </div>
+          <div class="peli-aclamadas">
+            <img
+              src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/t88XfoxO5cX3f0qaSxWsBS0Lc3.jpg"
+              alt="12 hombres sin piedad"
+            />
+          </div>
+          <div class="peli-aclamadas">
+            <img
+              src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/4N55tgxDW0RRATyrZHbx0q9HUKv.jpg"
+              alt="Parásitos"
+            />
+          </div>
+          <div class="peli-aclamadas">
+            <img
+              src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/1EFS40uFzv5ZVLSpu3xqYqnou67.jpg"
+              alt="La Milla Verde"
+            />
+          </div>
+          <div class="peli-aclamadas">
+            <img
+              src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/oiqKEhEfxl9knzWXvWecJKN3aj6.jpg"
+              alt="Forrest Gump"
+            />
+          </div>
+          <div class="peli-aclamadas">
+            <img
+              src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/hHwsr3t5n7VVUbPyU8VZswn0jkL.jpg"
+              alt="Cinema Paradiso"
+            />
+          </div>
+          <div class="peli-aclamadas">
+            <img
+              src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/aZ7MFlKPfB02Lr9NwZQ4vsYRgcy.jpg"
+              alt="La vida es bella"
+            />
+          </div>
+          <div class="peli-aclamadas">
+            <img
+              src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/2MztAexSbCVszezV0bKMKZPJAZf.jpg"
+              alt="Ciudad de Dios"
+            />
+          </div>
+          <div class="peli-aclamadas">
+            <img
+              src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/tSIH3DTA4oFQDhPaJgHxxQZoqHh.jpg"
+              alt="Batman El Caballero Oscuro"
+            />
+          </div>
+          <div class="peli-aclamadas">
+            <img
+              src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mWuFbQrXyLk2kMBKF9TUPtDwuPx.jpg"
+              alt="El Señor de los Anillos - El retorno del Rey"
+            />
+          </div>
+          <div class="peli-aclamadas">
+            <img
+              src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/vd9uj5KLlOrJnvNH03exLDlMAE0.jpg"
+              alt="El bueno, el feo y el malo"
+            />
+          </div>
+          <div class="peli-aclamadas">
+            <img
+              src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/nrSaXF39nDfAAeLKksRCyvSzI2a.jpg"
+              alt="Interstellar"
+            />
+          </div>
+          <div class="peli-aclamadas">
+            <img
+              src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/edPWyHqknFuxFY3sdmC3LtJITWC.jpg"
+              alt="Intocable"
+            />
+          </div>
+          <div class="peli-aclamadas">
+            <img
+              src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/sgTAWJFaB2kBvdQxRGabYFiQqEK.jpg"
+              alt="El club de la lucha"
+            />
+          </div>
+          <div class="peli-aclamadas">
+            <img
+              src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/AlWpEpQq0RgZIXVHAHZtFhEvRgd.jpg"
+              alt="Top Gun - Maverick"
+            />
+          </div>
+          <div class="peli-aclamadas">
+            <img
+              src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mxfLOWnHnSlbdraKfzRn5mqoqk7.jpg"
+              alt="El Pianista"
+            />
+          </div>
+          <div class="peli-aclamadas">
+            <img
+              src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/u4VnqaxINtKVscmdldZsBojU6jm.jpg"
+              alt="Erase una vez en América"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="menu-pie">
+        <a href="index.html">Términos y condiciones</a>
+        <a href="index.html">Preguntas frecuentes</a>
+        <a href="index.html">Ayuda</a>
+        <a href="index.html" class="administrador">Administrador Peliculas</a>
+      </div>
+      <a href="index.html"
+        ><img
+          class="flecha-arriba"
+          src="https://giselemilagros88.github.io/cac_movies_javaphp/assets/img/flecha-hacia-arriba.png"
+          alt="Flecha arriba"
+      /></a>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
